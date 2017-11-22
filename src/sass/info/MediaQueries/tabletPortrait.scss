@@ -1,0 +1,16 @@
+@import '../../mq';
+
+@media #{$tabletPortrait} {
+    @import '../mobile';
+  	& {
+     .who-col:nth-child(2), .who-col:nth-child(5) {
+          max-width: 325px;
+      }
+      .structure-col {
+        max-width: 330px;
+      }
+      .fecore {
+        min-height: 100%;
+      }
+	}
+}

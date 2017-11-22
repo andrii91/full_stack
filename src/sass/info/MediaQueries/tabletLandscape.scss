@@ -1,0 +1,45 @@
+@import '../../mq';
+
+@media #{$tabletLandscape} {
+    @import '../desktop';
+    .who-col {
+    	max-width: 275px;
+    }
+    .who-col:nth-child(3), .who-col:nth-child(6) {
+	    max-width: 315px;
+	}
+	.progr_course-list {
+		margin-top: 80px;
+	}
+	.progr_course-list li {
+		&:nth-child(1),&:nth-child(2),&:nth-child(3),&:nth-child(4) {
+			margin-right: 0;
+		}
+	}
+	.progr_course-list li {
+	    display: inline-block;
+	    vertical-align: top;
+	    max-width: 225px;
+	    position: relative;
+	    padding-left: 19px;
+	}
+	.progr_course {
+		min-height: 100%;
+		padding-bottom: 50px;
+	}
+	.structure-col {
+		padding-left: 75px;
+		max-width: 255px;
+		min-height: 430px;
+	}
+	.price-col, .price-col.img {
+	    max-width: 300px;
+	    padding-left: 10px;
+	    padding-right: 0;
+	    text-align: center;
+	    position: relative;
+	}
+	.price-box h3 {
+		margin-left: 10px;
+	}
+}
